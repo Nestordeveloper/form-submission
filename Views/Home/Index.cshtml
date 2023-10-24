@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<link rel="stylesheet" href="~/css/styles.css">
+@model User;
+<div class="container">
+    <form method="post" asp-action="Submission" asp-controller="Home">
+        <div class="formRow">
+            <div class="formItem">
+                <label asp-for="FirstName">First Name:</label>
+                <input asp-for="FirstName" />
+                <span asp-validation-for="FirstName"></span>
+            </div>
+        </div>
+        <div class="formRow">
+            <div class="formItem">
+                <label asp-for="LastName">Last Name:</label>
+                <input asp-for="LastName" />
+                <span asp-validation-for="LastName"></span>
+            </div>
+        </div>
+        <div class="formRow">
+            <div class="formItem">
+                <label asp-for="Age">Age:</label>
+                <input asp-for="Age" />
+                <span asp-validation-for="Age"></span>
+            </div>
+        </div>
+        <div class="formRow">
+            <div class="formItem">
+                <label asp-for="Email">Email Address:</label>
+                <input asp-for="Email" />
+                <span asp-validation-for="Email"></span>
+            </div>
+        </div>
+        <div class="formRow">
+            <div class="formItem">
+                <label asp-for="Password">Password:</label>
+                <input asp-for="Password" />
+                <span asp-validation-for="Password"></span>
+            </div>
+        </div>
+        <div class="btnSubmit">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>

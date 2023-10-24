@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    margin: 0 10%;
+    justify-content: center;
+}
+form span {
+    margin-left: 5px;
+    color: red;
+}
+form {
+    border: solid 1px black;
+    padding: 20%;
+}
+.resultForm {
+    border: solid 1px black;
+    padding: 2%;
+}
+.formRow {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.formItem {
+    display: flex;
+}
+label {
+    margin-right: 1rem;
+    width: 150px;
+}
+input, select, textarea {
+    flex: 1;
+    width: 250px;
+}
+.button a{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 0.3rem;
+    text-decoration: none;
+}
+.button {
+    display: flex;
+    justify-content: end;
+}
+.btnSubmit button{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 0.3rem;
+}
+.btnSubmit {
+    display: flex;
+    justify-content: end;
+}
